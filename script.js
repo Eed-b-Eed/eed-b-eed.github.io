@@ -4,6 +4,12 @@ fetch("/includes/nav.html")
         document.getElementById("nav").innerHTML = data;
     });
 
+fetch("/includes/ribbon.html")
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("rib").innerHTML = data;
+    });
+
 fetch("/includes/footer.html")
     .then(response => response.text())
     .then(data => {
