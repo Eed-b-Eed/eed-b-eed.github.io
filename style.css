@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #F2E8D5;
     color: #222222;
@@ -104,4 +108,64 @@ th:first-child {
 
 tr:hover {
     background-color: #FBF8F2;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 10px;
+    }
+
+    nav {
+        padding: 10px;
+    }
+
+    nav a {
+        display: inline-block;
+        padding: 8px;
+        margin: 2px;
+        font-size: 0.95rem;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    .arabic {
+        font-size: 1.5rem;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    th,
+    td {
+        font-size: 1.2rem;
+        padding: 8px 10px;
+    }
+
+    button,
+    .form-btn,
+    .verb-btn {
+        font-size: 1rem;
+        padding: 8px 12px;
+    }
+
 }
