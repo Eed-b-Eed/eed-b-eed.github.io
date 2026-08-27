@@ -22,7 +22,7 @@ linear-gradient(
 rgba(0,0,0,0.20),
 rgba(0,0,0,0.20)
 ),
-        url("images/jump.jpeg");
+        url("../images/jump.jpeg");
 
     background-size: cover;
     background-position: center;
