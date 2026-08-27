@@ -1,0 +1,37 @@
+.arabic {
+    font-family: "Noto Naskh Arabic", serif;
+    font-size: 2rem;
+    direction: rtl;
+}
+
+#formCheckboxes {
+    font-family: "Noto Naskh Arabic", serif;
+    font-size: 2rem;
+    direction: rtl;
+}
+
+.result-table {
+    direction: rtl;
+}
+
+.result-table th,
+.result-table td {
+    font-family: "Noto Naskh Arabic", serif;
+    font-size: 2rem;
+    direction: rtl;
+}
+
+.result-table th.verb-heading {
+    font-size: 1rem !important;
+    font-family: "Noto Naskh Arabic", serif;
+    direction: ltr !important;
+}
+
+.form-btn {
+    font-family: "Noto Naskh Arabic", serif;
+    font-size: 2rem;
+}
+
+.form-btn.active {
+    font-family: "Noto Naskh Arabic", serif;
+}
