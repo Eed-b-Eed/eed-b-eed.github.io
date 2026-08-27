@@ -268,7 +268,7 @@ button:hover {
 }
 footer {
     margin-top: 25px;
-    padding: 12px 20px;
+    padding: 12px 15px;
 
     background: #556B46;
     color: #F8F4ED;
@@ -276,7 +276,7 @@ footer {
     border-radius: 12px;
     text-align: center;
 
-    font-size: 0.65rem;
+    font-size: 0.75rem;
 }
 
 footer a {
