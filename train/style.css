@@ -72,6 +72,10 @@ input[type="checkbox"] {
     cursor: pointer;
 }
 
+.verb-btn {
+margin: 5px;
+}
+
 .verb-btn.active {
     background: #E3EBD9;
     color: #556B46;
