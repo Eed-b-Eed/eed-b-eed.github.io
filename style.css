@@ -191,13 +191,104 @@ button:hover {
     background-color: #D99A5B;
 }
 
-footer {
-    margin-top: 40px;
-    text-align: center;
-    font-size: 0.9em;
-    color: #666666;
+.updates-section {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
 }
 
+.updates-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-align: center;
+    color: #556B46;
+    font-variant: small-caps;
+    margin-bottom: 1rem;
+}
+
+.update-card {
+    background: #F8F4ED;
+    border: 1px solid #D8CDB8;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 6px rgba(85,107,70,0.08);
+    transition: all 0.2s ease;
+}
+
+.update-card:hover {
+    box-shadow: 0 4px 10px rgba(85,107,70,0.15);
+    transform: translateY(-2px);
+}
+
+.update-card h3 {
+    margin-top: 0;
+    color: #556B46;
+}
+
+.update-card .date {
+    color: #777;
+    font-size: 0.9rem;
+}
+
+
+.corner-ribbon {
+    position: fixed;
+    top: 25px;
+    left: -60px;
+
+    background: #D99A5B;
+    color: white;
+
+    padding: 10px 70px;
+
+    font-size: 0.6rem;
+    font-weight: 600;
+
+    transform: rotate(-45deg);
+
+    z-index: 1000;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.support-link,
+.support-link:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.support-link:hover,
+.support-link:active {
+    color: white;
+    text-decoration: none;
+    filter: brightness(1.05);
+}
+footer {
+    margin-top: 40px;
+    padding: 25px 20px;
+
+    background: #556B46;
+    color: #F8F4ED;
+
+    border-radius: 12px;
+    text-align: center;
+
+    font-size: 0.95rem;
+}
+
+footer a {
+    color: #F8F4ED;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    margin: 10px 0;
+}
 table {
     border-collapse: collapse;
     margin: 0 auto;
