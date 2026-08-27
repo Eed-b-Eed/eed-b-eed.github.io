@@ -185,6 +185,8 @@ button {
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+	margin: 5px;
+	font-family: "Segoe UI", sans-serif;
 }
 
 button:hover {
