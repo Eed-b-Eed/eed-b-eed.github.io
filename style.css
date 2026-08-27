@@ -267,8 +267,8 @@ button:hover {
     filter: brightness(1.05);
 }
 footer {
-    margin-top: 40px;
-    padding: 25px 20px;
+    margin-top: 25px;
+    padding: 12px 20px;
 
     background: #556B46;
     color: #F8F4ED;
@@ -276,7 +276,7 @@ footer {
     border-radius: 12px;
     text-align: center;
 
-    font-size: 0.95rem;
+    font-size: 0.65rem;
 }
 
 footer a {
