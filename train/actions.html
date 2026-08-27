@@ -17,17 +17,69 @@
     <a href="train/sounds.html">____</a>
 </nav>
 
-<main>
-    <h1>Hello</h1>
+    <h2>Verbs</h2>
 
-    <p>How are you?</p>
+    <div id="optionsPanel">
 
-    <p>
-        <a href="../index.html">Back to Language Selection</a>
-    </p>
+        <h3>Select Options</h3>
+
+        <p>
+
+			<label>
+				<input type="checkbox" id="showKhalili" checked>
+				Khalili
+			</label>
+
+			<label>
+				<input type="checkbox" id="showClassical">
+				Classical
+			</label>
+
+        </p>
+		
+				<p>
+				If you are not a beginner, select relevant options to make your practice harder: </p>
+				<p>
+			<label>
+				<input type="checkbox" id="hideStretch">
+				Khalili: I still need some aid.
+			</label>
+		</p>
+		<p>
+			<label>
+				<input type="checkbox" id="plainKhalili">
+				Khalili: No need of aid.
+			</label>
+		</p>
+						<p>
+			<label>
+				<input type="checkbox" id="hideHarakat">
+				Classical: No need of aid.
+			</label>
+		</p>
+		<p> Who speaks? 
+		</p>
+
+		<div id="formCheckboxes" class="form-grid"></div>		
+
+    </div>
+
+
+    <div id="optionsPanel">
+    <h3>Verbs for training</h3>
+    <div id="verbList"></div>
+	</div>
+	
+	<p>
+<button id="showFormsBtn" class="show-forms-btn">
+    Show Forms
+</button>
+</p>
+    <div id="results"></div>
+
 </main>
 <div id="footer"></div>
 
-<script src="script.js"></script>
+<script src="../script.js"></script>
 </body>
 </html>
