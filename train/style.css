@@ -1,1 +1,118 @@
+.arabic {
+    font-family: "Noto Naskh Arabic", serif;
+    font-size: 2rem;
+    direction: rtl;
+}
 
+#formCheckboxes {
+    font-family: "Noto Naskh Arabic", serif;
+    font-size: 2rem;
+    direction: rtl;
+}
+
+#optionsPanel {
+    display: block;
+    margin-top: 20px;
+    padding: 15px;
+    background: #F8F4ED;
+    border-radius: 8px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.result-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    direction: rtl;
+}
+
+.result-table th,
+.result-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    font-family: "Noto Naskh Arabic", serif;
+    font-size: 2rem;
+    direction: rtl;
+}
+
+.result-table th {
+    background-color: #556B46;
+    color: #F8F4ED;
+}
+
+.result-table th.verb-heading {
+    font-size: 1rem !important;
+    font-family: "Noto Naskh Arabic", serif;
+    direction: ltr !important;
+}
+
+input[type="checkbox"] {
+    accent-color: #556B46;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.form-btn {
+    background: #F8F4ED;
+    color: #222;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    font-family: "Noto Naskh Arabic", serif;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.verb-btn.active {
+    background: #E3EBD9;
+    color: #556B46;
+    border: 2px solid #556B46;
+    font-weight: 600;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.form-btn.active {
+    background: #E3EBD9;
+    color: #556B46;
+    border: 2px solid #556B46;
+    font-weight: 600;
+    font-family: "Noto Naskh Arabic", serif;
+}
+
+.verb-heading {
+    font-size: 0.6rem;
+    font-weight: normal;
+    color: black;
+}
+
+.show-forms-btn {
+    background: #556B46;
+    color: #F8F4ED;
+    border: 2px solid #556B46;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 3px 8px rgba(85, 107, 70, 0.2);
+}
+
+.show-forms-btn:hover {
+    background: #667C55;
+    transform: translateY(-1px);
+}
+
+.show-forms-btn:active {
+    transform: translateY(0);
+}
