@@ -48,6 +48,11 @@
     color: #F8F4ED;
 }
 
+.result-table td:first-child {
+    background-color: #556B46;
+    color: #F8F4ED;
+}
+
 .result-table th.verb-heading {
     font-size: 1rem !important;
     font-family: inherit;
