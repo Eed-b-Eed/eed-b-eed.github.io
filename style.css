@@ -236,8 +236,8 @@ button:hover {
 
 .corner-ribbon {
     position: fixed;
-    top: 25px;
-    left: -60px;
+    bottom: 25px;
+    right: -60px;
 
     background: #D99A5B;
     color: white;
