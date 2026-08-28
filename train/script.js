@@ -17,7 +17,7 @@ verbs: [
 
 {
 id: "write",
-
+category: "Present (no objects)",
 label: "I write",
 
 varieties: {
@@ -52,7 +52,7 @@ Classical: [
 },
 {
 id: "write",
-
+category: "Present (no objects)",
 label: "I don't write",
 
 varieties: {
@@ -86,7 +86,7 @@ Classical: [
 },
 {
 id: "write",
-
+category: "Present (with objects)",
 label: "I write it (e.g. an email)",
 
 varieties: {
@@ -120,7 +120,7 @@ Classical: [
 },
 {
 id: "write",
-
+category: "Present (with objects)",
 label: "I don't write it (e.g. an email)",
 
 varieties: {
@@ -154,7 +154,7 @@ Classical: [
 },
 {
 id: "write",
-
+category: "Present (with objects)",
 label: "I write it (e.g. a letter)",
 
 varieties: {
@@ -188,7 +188,7 @@ Classical: [
 },
 {
 id: "write",
-
+category: "Present (with objects)",
 label: "I don't write it (e.g. a letter)",
 
 varieties: {
@@ -222,7 +222,7 @@ Classical: [
 },
 {
 id: "write",
-
+category: "Present (with objects)",
 label: "I write to him",
 
 varieties: {
@@ -256,7 +256,7 @@ Classical: [
 },
 {
 id: "write",
-
+category: "Present (with objects)",
 label: "I don't write to him",
 
 varieties: {
@@ -290,7 +290,7 @@ Classical: [
 },
 {
 id: "write",
-
+category: "Present (with objects)",
 label: "I write to her",
 
 varieties: {
@@ -326,7 +326,7 @@ Classical: [
 id: "write",
 
 label: "I don't write to her",
-
+category: "Present (with objects)",
 varieties: {
 Khalili: [
 "baktubilhA$",
@@ -358,7 +358,7 @@ Classical: [
 },
 {
 id: "write",
-
+category: "Past (no objects)",
 label: "I wrote",
 
 varieties: {
@@ -402,26 +402,70 @@ const results = document.getElementById("results");
 
 openOptions();
 buildVerbList();
-
 function buildVerbList() {
 
-trainerData.verbs.forEach(verb => {
+    verbList.innerHTML = "";
 
-const btn = document.createElement("button");
+    const groups = {};
 
-btn.textContent = verb.label;
-btn.className = "verb-btn";
+    trainerData.verbs.forEach(verb => {
 
-btn.addEventListener("click", () => {
-btn.classList.toggle("active");
-});
+        if (!groups[verb.id]) {
 
-const div = document.createElement("div");
-div.appendChild(btn);
-verbList.appendChild(div);
+            const idBtn = document.createElement("button");
+            idBtn.textContent = verb.id;
+            idBtn.className = "id-btn";
 
-});
+            idBtn.addEventListener("click", () => {
+                showVerbGroup(verb.id);
+            });
 
+            verbList.appendChild(idBtn);
+
+            groups[verb.id] = true;
+        }
+    });
+}
+
+function showVerbGroup(id) {
+
+    verbList.innerHTML = "";
+
+    const backBtn = document.createElement("button");
+    backBtn.textContent = "← Back";
+    backBtn.addEventListener("click", buildVerbList);
+    verbList.appendChild(backBtn);
+
+    const categories = {};
+
+    trainerData.verbs
+        .filter(v => v.id === id)
+        .forEach(verb => {
+
+            if (!categories[verb.category]) {
+
+			const categoryHeading = document.createElement("h4");
+			categoryHeading.textContent = verb.category;
+			categoryHeading.className = "category-heading";
+
+			const categoryContainer = document.createElement("div");
+
+			verbList.appendChild(categoryHeading);
+			verbList.appendChild(categoryContainer);
+
+                categories[verb.category] = categoryContainer;
+            }
+
+            const btn = document.createElement("button");
+            btn.textContent = verb.label;
+            btn.className = "verb-btn";
+
+            btn.addEventListener("click", () => {
+                btn.classList.toggle("active");
+            });
+
+            categories[verb.category].appendChild(btn);
+        });
 }
 
 function openOptions() {
