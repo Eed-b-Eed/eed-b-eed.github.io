@@ -17,7 +17,7 @@ verbs: [
 
 {
 id: "write",
-category: "Present (no objects)",
+category: "Present no objects",
 label: "I write",
 
 varieties: {
@@ -52,7 +52,7 @@ Classical: [
 },
 {
 id: "write",
-category: "Present (no objects)",
+category: "Present no objects",
 label: "I don't write",
 
 varieties: {
@@ -86,7 +86,7 @@ Classical: [
 },
 {
 id: "write",
-category: "Present (with objects)",
+category: "Present with objects",
 label: "I write it (e.g. an email)",
 
 varieties: {
@@ -120,7 +120,7 @@ Classical: [
 },
 {
 id: "write",
-category: "Present (with objects)",
+category: "Present with objects",
 label: "I don't write it (e.g. an email)",
 
 varieties: {
@@ -154,7 +154,7 @@ Classical: [
 },
 {
 id: "write",
-category: "Present (with objects)",
+category: "Present with objects",
 label: "I write it (e.g. a letter)",
 
 varieties: {
@@ -188,7 +188,7 @@ Classical: [
 },
 {
 id: "write",
-category: "Present (with objects)",
+category: "Present with objects",
 label: "I don't write it (e.g. a letter)",
 
 varieties: {
@@ -222,7 +222,7 @@ Classical: [
 },
 {
 id: "write",
-category: "Present (with objects)",
+category: "Present with objects",
 label: "I write to him",
 
 varieties: {
@@ -256,7 +256,7 @@ Classical: [
 },
 {
 id: "write",
-category: "Present (with objects)",
+category: "Present with objects",
 label: "I don't write to him",
 
 varieties: {
@@ -290,7 +290,7 @@ Classical: [
 },
 {
 id: "write",
-category: "Present (with objects)",
+category: "Present with objects",
 label: "I write to her",
 
 varieties: {
@@ -326,7 +326,7 @@ Classical: [
 id: "write",
 
 label: "I don't write to her",
-category: "Present (with objects)",
+category: "Present with objects",
 varieties: {
 Khalili: [
 "baktubilhA$",
@@ -358,7 +358,7 @@ Classical: [
 },
 {
 id: "write",
-category: "Past (no objects)",
+category: "Past with no objects",
 label: "I wrote",
 
 varieties: {
@@ -386,6 +386,75 @@ Classical: [
 "كَتَبْتُنَّ",
 "كَتَبُوا",
 "كَتَبْنَ"
+]
+}
+
+},
+{
+id: "say",
+category: "Present no objects",
+label: "I say",
+
+varieties: {
+Khalili: [
+"baqUl",
+"bitqUl",
+"bitqUlI",
+"baqUl",
+"bitqUl",
+"binqUl",
+"bitqUlU",
+"bitqUlen",
+"biqUlU",
+"biqUlen"
+],
+
+Classical: [
+"أَقُولُ",
+"تَقُولُ",
+"تَقُولِينَ",
+"يَقُولُ",
+"تَقُولُ",
+"نَقُولُ",
+"تَقُولُونَ",
+"تَقُلْنَ",
+"يَقُولُونَ",
+"يَقُلْنَ"
+]
+}
+
+},
+	{
+id: "say",
+category: "Present no objects",
+label: "I don't say",
+
+varieties: {
+Khalili: [
+"baqUle$",
+"bitqUle$",
+"bitqUlI$",
+"biqUle$",
+"bitqUle$",
+"binqUle$",
+"bitqUlU$",
+"bitqUlene$",
+"biqUlU$",
+"biqUlene$"
+
+],
+
+Classical: [
+"لَا أَقُولُ",
+"لَا تَقُولُ",
+"لَا تَقُولِينَ",
+"لَا يَقُولُ",
+"لَا تَقُولُ",
+"لَا نَقُولُ",
+"لَا تَقُولُونَ",
+"لَا تَقُلْنَ",
+"لَا يَقُولُونَ",
+"لَا يَقُلْنَ"
 ]
 }
 
