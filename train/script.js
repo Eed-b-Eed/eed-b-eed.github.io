@@ -485,7 +485,7 @@ function showForms() {
     if (!showClassical && !showKhalili) {
 
         results.innerHTML =
-            "<p>Please select at least one variety.</p>";
+            "<p>Please select at least one type of Arabic.</p>";
 
         return;
     }
@@ -493,7 +493,7 @@ function showForms() {
     if (selectedVerbs.length === 0) {
 
         results.innerHTML =
-            "<p>Please select at least one verb.</p>";
+            "<p>Please select at least one action.</p>";
 
         return;
     }
@@ -501,7 +501,7 @@ function showForms() {
     if (selectedForms.length === 0) {
 
         results.innerHTML =
-            "<p>Please select at least one pronoun.</p>";
+            "<p>Please select at least one person.</p>";
 
         return;
     }
