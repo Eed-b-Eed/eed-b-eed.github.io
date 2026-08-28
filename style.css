@@ -272,6 +272,41 @@ button:hover {
     text-decoration: none;
     filter: brightness(1.05);
 }
+
+.corner-ribbonAI {
+    position: fixed;
+    top: 25px;
+    left: -60px;
+
+    background: #D99A5B;
+    color: white;
+
+    padding: 10px 70px;
+
+    font-size: 0.6rem;
+    font-weight: 600;
+
+    transform: rotate(-45deg);
+
+    z-index: 1000;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.support-linkAI,
+.support-linkAI:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.support-linkAI:hover,
+.support-linkAI:active {
+    color: white;
+    text-decoration: none;
+    filter: brightness(1.05);
+}
+
+
 footer {
     margin-top: 25px;
     padding: 12px 15px;
