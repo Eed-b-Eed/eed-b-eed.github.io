@@ -458,6 +458,74 @@ Classical: [
 ]
 }
 
+},
+	{
+id: "speak",
+category: "Present with no objects",
+label: "I speak",
+
+varieties: {
+Khalili: [
+"ba7kI",
+"ibti7kI",
+"ibti7kI",
+"bi7kI",
+"ibti7kI",
+"ibni7kI",
+"ibti7kU",
+"ibti7ken",
+"bi7kWw",
+"bi7ken"
+],
+
+Classical: [
+"أَحْكِي",
+"تَحْكِي",
+"تَحْكِينَ",
+"يَحْكِي",
+"تَحْكِي",
+"نَحْكِي",
+"تَحْكُونَ",
+"تَحْكِينَ",
+"يَحْكُونَ",
+"يَحْكِينَ"
+]
+}
+
+},
+	{
+id: "speak",
+category: "Present with no objects",
+label: "I don't speak",
+
+varieties: {
+Khalili: [
+"ba7kI$",
+"ibti7kI$",
+"ibti7kI$",
+"bi7kI$",
+"ibti7kI$",
+"ibni7kI$",
+"ibti7kU$",
+"ibti7kene$",
+"bi7kU$",
+"bi7kene$"
+],
+
+Classical: [
+"لَا أَحْكِي",
+"لَا تَحْكِي",
+"لَا تَحْكِينَ",
+"لَا يَحْكِي",
+"لَا تَحْكِي",
+"لَا نَحْكِي",
+"لَا تَحْكُونَ",
+"لَا تَحْكِينَ",
+"لَا يَحْكُونَ",
+"لَا يَحْكِينَ"
+]
+}
+
 }
 
 ]
