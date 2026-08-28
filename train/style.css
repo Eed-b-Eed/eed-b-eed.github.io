@@ -46,6 +46,7 @@
 .result-table th {
     background-color: #556B46;
     color: #F8F4ED;
+    font-size: 1rem;
 }
 
 .result-table th.verb-heading {
