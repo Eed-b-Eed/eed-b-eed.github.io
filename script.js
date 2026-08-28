@@ -10,6 +10,12 @@ fetch("/includes/ribbon.html")
         document.getElementById("rib").innerHTML = data;
     });
 
+fetch("/includes/ribbonAI.html")
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("ribAI").innerHTML = data;
+    });
+
 fetch("/includes/footer.html")
     .then(response => response.text())
     .then(data => {
