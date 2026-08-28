@@ -17,7 +17,7 @@ verbs: [
 
 {
 id: "write",
-category: "Present no objects",
+category: "Present with no objects",
 label: "I write",
 
 varieties: {
@@ -52,7 +52,7 @@ Classical: [
 },
 {
 id: "write",
-category: "Present no objects",
+category: "Present with no objects",
 label: "I don't write",
 
 varieties: {
@@ -392,7 +392,7 @@ Classical: [
 },
 {
 id: "say",
-category: "Present no objects",
+category: "Present with no objects",
 label: "I say",
 
 varieties: {
@@ -426,7 +426,7 @@ Classical: [
 },
 	{
 id: "say",
-category: "Present no objects",
+category: "Present with no objects",
 label: "I don't say",
 
 varieties: {
