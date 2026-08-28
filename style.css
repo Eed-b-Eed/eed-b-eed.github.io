@@ -101,6 +101,18 @@ rgba(0,0,0,0.20)
     background: #D8E4CB;
 }
 
+.logo-container {
+    text-align: center;
+    margin: -40px 0 20px 0;
+    position: relative;
+    z-index: 10;
+}
+
+.logo {
+    width: 120px;
+    height: 120px;
+}
+
 @media (max-width: 768px) {
 
     .hero {
