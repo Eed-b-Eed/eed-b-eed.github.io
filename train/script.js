@@ -433,7 +433,10 @@ function showVerbGroup(id) {
 
     const backBtn = document.createElement("button");
     backBtn.textContent = "← Back";
-    backBtn.addEventListener("click", buildVerbList);
+    backBtn.addEventListener("click", () => {
+    results.innerHTML = "";
+    buildVerbList();
+	});
     verbList.appendChild(backBtn);
 
     const categories = {};
