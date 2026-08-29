@@ -67,7 +67,7 @@ function showArabicOnly(dialogueId) {
         "#dialogue-" + dialogueId + " .dialogue-line"
     ).forEach(line => {
 
-        line.classList.remove("below", "side-by-side");
+        line.classList.remove("below", "side-by-side", "arabicMSA");
 
     });
 }
