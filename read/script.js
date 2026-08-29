@@ -66,8 +66,6 @@ const dialogue = [
 ["سلام بكرا بشوفك","Bye, I'll see you tomorrow. "]
 ];
 
-});
-
 const container = document.getElementById("dialogue");
 
 dialogue.forEach(([ar, en]) => {
