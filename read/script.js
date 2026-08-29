@@ -60,7 +60,7 @@ const dialogue = [
 ["يعطيك العافيه","May He give you strength. "],
 ["الله يعافيك","May God strengthen you. "],
 ["تمام كوتش بكرا اي ساعه","Okay, coach. What time tomorrow? "],
-["بكرا عل اربعه تمام لالك","Does it work for youat four tomorrow?"],
+["بكرا عل اربعه تمام لالك","Does it work for you at four tomorrow?"],
 ["تمام منيح","Yes, it's okay. "],
 ["سلام","Bye! "],
 ["سلام بكرا بشوفك","Bye, I'll see you tomorrow. "]
