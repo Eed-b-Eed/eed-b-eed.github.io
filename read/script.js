@@ -20,8 +20,8 @@ function showSideBySide() {
 
 const dialogue = [
     ["AR", "ENG"],
-    ["AR", "ENG""],
-    ["AR", "ENG""]
+    ["AR", "ENG"],
+    ["AR", "ENG"]
 ];
 
 const container = document.getElementById("dialogue");
