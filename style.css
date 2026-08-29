@@ -3,10 +3,10 @@
 }
 
 .highlight-box {
-    background: #f4f7f0;
-    padding: 8px 12px;
-    display: inline-block;
-    border-radius: 4px;
+background: #f8f9f5;
+padding: 10px 15px;
+border-radius: 6px;
+margin: 15px 0;
 }
 
 .image-overlay {
