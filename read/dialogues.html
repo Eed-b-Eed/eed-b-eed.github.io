@@ -19,13 +19,22 @@
 
 <main>
 <div class="update-card"><h2>At the gym</h2> 
-<div id="optionsPanel">
+
+	<div class="story-preview">
+    <h3>Read the Story</h3>
+    <p>....</p>
+    <button class="show-forms-btn" onclick="loadStory()">
+        Read Story
+    </button>
+</div>
+<div id="storyContent" style="display:none;">
 <div class="translation-controls">
     <button onclick="showArabicOnly()">Arabic</button>
     <button onclick="showBelow()">English Below</button>
     <button onclick="showSideBySide()">Side by Side</button>
-</div></div>
+</div>
 
+<div class="dialogue-container">
 <div id="dialogue"></div>
 
 </div>
