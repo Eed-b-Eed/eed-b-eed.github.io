@@ -22,59 +22,65 @@
 
 	<div class="story-preview">
     <p>Having joined the gym, you start your training - at full power.</p>
-<button class="show-forms-btn" onclick="toggleStory();">
-Read
+<button class="show-forms-btn"
+        onclick="toggleStory('gym')">
+    Read
 </button>
-
-<div id="storyContent" style="display:none;">
+	</div>
+<div id="story-gym" style="display:none;">
 
     <div class="dialogue-controls">
-        <button onclick="showArabicOnly()">
+
+        <button onclick="showArabicOnly('gym')">
             Arabic Only
         </button>
 
-        <button onclick="showBelow()">
+        <button onclick="showBelow('gym')">
             Arabic + Translation
         </button>
 
-        <button onclick="showSideBySide()">
+        <button onclick="showSideBySide('gym')">
             Side by Side
         </button>
+
     </div>
 
     <div class="dialogue-container">
-        <div id="dialogue"></div>
+        <div id="dialogue-gym"></div>
     </div>
 
 </div>
 </div>
 </div>
 	
-<div class="update-card"><h2>At the gym2</h2> 
-	<div class="story-preview">
-    <p>Having joined the gym, you start your training - at full power.</p>
-<button class="show-forms-btn" onclick="toggleStory(); renderDialogue('gym2')">
-Read
-</button>
+<div class="update-card"><h2>At Gym2</h2> 
+		<div class="story-preview">
+    <p>Having joined the gym2, you start your training - at full power.</p>
+	<button class="show-forms-btn"
+        onclick="toggleStory('gym2')">
+    Read
+</button></div>
 
-<div id="storyContent" style="display:none;">
+<div id="story-gym2" style="display:none;">
 
     <div class="dialogue-controls">
-        <button onclick="showArabicOnly()">
+
+        <button onclick="showArabicOnly('gym2')">
             Arabic Only
         </button>
 
-        <button onclick="showBelow()">
+        <button onclick="showBelow('gym2')">
             Arabic + Translation
         </button>
 
-        <button onclick="showSideBySide()">
+        <button onclick="showSideBySide('gym2')">
             Side by Side
         </button>
+
     </div>
 
     <div class="dialogue-container">
-        <div id="dialogue"></div>
+        <div id="dialogue-gym2"></div>
     </div>
 
 </div>
