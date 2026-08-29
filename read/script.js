@@ -96,12 +96,21 @@ function showSideBySide(dialogueId) {
     });
 }
 
-function showmsa(dialogueId) {
+function showArabicOnly(dialogueId) {
 
     document.querySelectorAll(
         "#dialogue-" + dialogueId + " .arabicmsa"
     ).forEach(line => {
-        line.classList.remove("below");
+
+        line.style.display = "none";
+
+    });
+
+    document.querySelectorAll(
+        "#dialogue-" + dialogueId + " .dialogue-line"
+    ).forEach(line => {
+
+        line.classList.remove("below", "side-by-side");
 
     });
 }
