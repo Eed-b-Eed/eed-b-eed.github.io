@@ -20,7 +20,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
+    cursor: zoom-out;
     z-index: 9999;
 }
 
@@ -28,6 +28,12 @@
     max-width: 90%;
     max-height: 90%;
 }
+
+.enlargeable {
+    cursor: zoom-in;
+}
+
+
 
 body {
     background-color: #F2E8D5;
