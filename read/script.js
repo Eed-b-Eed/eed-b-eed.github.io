@@ -19,12 +19,18 @@ function showSideBySide() {
 }
 
 function toggleStory() {
+
     const story = document.getElementById("storyContent");
 
     if (story.style.display === "none" || story.style.display === "") {
+
         story.style.display = "block";
+        showArabicOnly();
+
     } else {
+
         story.style.display = "none";
+
     }
 }
 
