@@ -18,6 +18,10 @@ function showSideBySide() {
     });
 }
 
+function loadStory() {
+    document.getElementById("storyContent").style.display = "block";
+}
+
 const dialogue = [
 ["مرحبا كوتش","Hello, coach!"],
 ["مرحبا","Hello."],
