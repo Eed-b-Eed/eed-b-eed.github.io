@@ -75,3 +75,11 @@
 .dialogue-line.side-by-side .arabic {
     text-align: right;
 }
+
+.arabicMSA {
+    display: none;
+    direction: rtl;
+    text-align: right;
+    color: #555;
+    font-size: 0.95em;
+}
