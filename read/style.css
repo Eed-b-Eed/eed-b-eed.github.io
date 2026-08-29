@@ -1,0 +1,20 @@
+.english {
+    display: none;
+    color: #555;
+}
+
+.dialogue-line.side-by-side {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.dialogue-line.side-by-side .english {
+    display: block;
+}
+
+.dialogue-line.below .english {
+    display: block;
+    margin-top: 5px;
+    font-style: italic;
+}
