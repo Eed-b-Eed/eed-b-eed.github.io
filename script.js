@@ -43,3 +43,20 @@ document.querySelectorAll('.enlargeable').forEach(img => {
     });
 
 });
+
+function toggleReadMore(contentId, link) {
+
+    const content = document.getElementById(contentId);
+
+    if (content.style.display === "none" || content.style.display === "") {
+
+        content.style.display = "block";
+        link.textContent = "Read less";
+
+    } else {
+
+        content.style.display = "none";
+        link.textContent = "Read more";
+
+    }
+}
