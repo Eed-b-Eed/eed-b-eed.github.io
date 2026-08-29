@@ -1,26 +1,26 @@
-function showArabicOnly(id) {
-    document.querySelectorAll("#dialogue-" + id + " .dialogue-line").forEach(line => {
+function showArabicOnly() {
+    document.querySelectorAll('.dialogue-line').forEach(line => {
         line.classList.remove('below', 'side-by-side');
     });
 }
 
-function showBelow(id) {
-    document.querySelectorAll("#dialogue-" + id + " .dialogue-line").forEach(line => {
+function showBelow() {
+    document.querySelectorAll('.dialogue-line').forEach(line => {
         line.classList.remove('side-by-side');
         line.classList.add('below');
     });
 }
 
-function showSideBySide(id) {
-    document.querySelectorAll("#dialogue-" + id + " .dialogue-line").forEach(line => {
+function showSideBySide() {
+    document.querySelectorAll('.dialogue-line').forEach(line => {
         line.classList.remove('below');
         line.classList.add('side-by-side');
     });
 }
 
-function toggleStory(id) {
+function toggleStory() {
 
-    const story = document.getElementById("storyContent" + id);
+    const story = document.getElementById("storyContent");
 
     if (story.style.display === "none" || story.style.display === "") {
 
@@ -34,8 +34,7 @@ function toggleStory(id) {
     }
 }
 
-const dialogues = {
-gym:    [
+const dialogue = [
 ["مرحبا كوتش","Hello, coach!"],
 ["مرحبا","Hello."],
 ["كيفك","How are you?"],
@@ -65,24 +64,15 @@ gym:    [
 ["تمام منيح","Yes, it's okay. "],
 ["سلام","Bye! "],
 ["سلام بكرا بشوفك","Bye, I'll see you tomorrow. "]
-],
-gym2:    [
-["مرحبا كوتش","Hello, coach!"],
-["مرحبا","Hello."]
-    ]
-};
+];
 
-function renderDialogue(id) {
-    const container = document.getElementById("dialogue");
+const container = document.getElementById("dialogue");
 
-    container.innerHTML = "";
-
-    dialogues[id].forEach(([ar, en]) => {
-        container.innerHTML += `
-            <div class="dialogue-line">
-                <div class="arabic" dir="rtl">${ar}</div>
-                <div class="english">${en}</div>
-            </div>
-        `;
-    });
-}
+dialogue.forEach(([ar, en]) => {
+    container.innerHTML += `
+        <div class="dialogue-line">
+            <div class="arabic" dir="rtl">${ar}</div>
+            <div class="english">${en}</div>
+        </div>
+    `;
+});
