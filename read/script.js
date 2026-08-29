@@ -28,17 +28,6 @@ function toggleStory() {
     }
 }
 
-const container = document.getElementById("dialogue");
-
-dialogue.forEach(([ar, en]) => {
-    container.innerHTML += `
-        <div class="dialogue-line">
-            <div class="arabic" dir="rtl">${ar}</div>
-            <div class="english">${en}</div>
-        </div>
-    `;
-});
-
 const dialogue = [
 ["مرحبا كوتش","Hello, coach!"],
 ["مرحبا","Hello."],
@@ -71,4 +60,15 @@ const dialogue = [
 ["سلام بكرا بشوفك","Bye, I'll see you tomorrow. "]
 ];
 
+});
+
+const container = document.getElementById("dialogue");
+
+dialogue.forEach(([ar, en]) => {
+    container.innerHTML += `
+        <div class="dialogue-line">
+            <div class="arabic" dir="rtl">${ar}</div>
+            <div class="english">${en}</div>
+        </div>
+    `;
 });
