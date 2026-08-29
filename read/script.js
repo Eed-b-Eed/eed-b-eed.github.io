@@ -67,7 +67,7 @@ function showArabicOnly(dialogueId) {
         "#dialogue-" + dialogueId + " .dialogue-line"
     ).forEach(line => {
 
-        line.classList.remove("below", "side-by-side", "arabicMSA");
+        line.classList.remove("below", "side-by-side", "arabicmsa");
 
     });
 }
@@ -78,7 +78,7 @@ function showBelow(dialogueId) {
         "#dialogue-" + dialogueId + " .dialogue-line"
     ).forEach(line => {
 
-        line.classList.remove("side-by-side", "arabicMSA");
+        line.classList.remove("side-by-side", "arabicmsa");
         line.classList.add("below");
 
     });
@@ -90,7 +90,7 @@ function showSideBySide(dialogueId) {
         "#dialogue-" + dialogueId + " .dialogue-line"
     ).forEach(line => {
 
-        line.classList.remove("below", "arabicMSA");
+        line.classList.remove("below", "arabicmsa");
         line.classList.add("side-by-side");
 
     });
@@ -99,7 +99,7 @@ function showSideBySide(dialogueId) {
 function showMSA(dialogueId) {
 
     document.querySelectorAll(
-        "#dialogue-" + dialogueId + " .arabicMSA"
+        "#dialogue-" + dialogueId + " .arabicmsa"
     ).forEach(line => {
         line.classList.remove("below");
 
