@@ -4,9 +4,10 @@
 
 .highlight-box {
     background: #D99A5B;
-    padding: 10px 15px;
-    border-radius: 6px;
+    padding: 5px 5px;
+    border-radius: 5px;
     margin: 15px 0;
+	color: white;
 }
 
 
