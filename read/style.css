@@ -18,3 +18,38 @@
     margin-top: 5px;
     font-style: italic;
 }
+
+.dialogue-container {
+    background: #F8F4ED;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.arabic {
+    font-family: "Noto Naskh Arabic", serif;
+    font-size: 2rem;
+    direction: rtl;
+}
+
+.english {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 1rem;
+    color: #666;
+    margin-top: 5px;
+}
+
+.dialogue-line {
+    margin-bottom: 20px;
+}
+
+.dialogue-line.side-by-side {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    align-items: center;
+}
+
+
+
+
