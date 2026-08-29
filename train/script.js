@@ -474,7 +474,7 @@ Khalili: [
 "ibni7kI",
 "ibti7kU",
 "ibti7ken",
-"bi7kWw",
+"bi7kU",
 "bi7ken"
 ],
 
