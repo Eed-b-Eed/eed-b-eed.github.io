@@ -96,7 +96,7 @@ function showSideBySide(dialogueId) {
     });
 }
 
-function showMSA(dialogueId) {
+function showmsa(dialogueId) {
 
     document.querySelectorAll(
         "#dialogue-" + dialogueId + " .arabicmsa"
