@@ -22,6 +22,16 @@ function loadStory() {
     document.getElementById("storyContent").style.display = "block";
 }
 
+function toggleStory() {
+    const story = document.getElementById("story");
+
+    if (story.style.display === "none" || story.style.display === "") {
+        story.style.display = "block";
+    } else {
+        story.style.display = "none";
+    }
+}
+
 const dialogue = [
 ["مرحبا كوتش","Hello, coach!"],
 ["مرحبا","Hello."],
