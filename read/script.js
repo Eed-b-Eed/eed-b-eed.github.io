@@ -78,7 +78,7 @@ function showBelow(dialogueId) {
         "#dialogue-" + dialogueId + " .dialogue-line"
     ).forEach(line => {
 
-        line.classList.remove("side-by-side");
+        line.classList.remove("side-by-side", "arabicMSA");
         line.classList.add("below");
 
     });
@@ -90,7 +90,7 @@ function showSideBySide(dialogueId) {
         "#dialogue-" + dialogueId + " .dialogue-line"
     ).forEach(line => {
 
-        line.classList.remove("below");
+        line.classList.remove("below", "arabicMSA");
         line.classList.add("side-by-side");
 
     });
