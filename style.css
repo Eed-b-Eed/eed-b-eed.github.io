@@ -3,13 +3,12 @@
 }
 
 .highlight-box {
-    background: #f4f7f0;
-    border: 1px solid #d8e0d0;
-    border-left: 5px solid #556B46;
-    padding: 15px 20px;
-    margin: 20px 0;
+    background: #D99A5B;
+    padding: 10px 15px;
     border-radius: 6px;
+    margin: 15px 0;
 }
+
 
 .image-overlay {
     position: fixed;
