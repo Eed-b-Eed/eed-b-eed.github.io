@@ -20,9 +20,10 @@
 }
 
 .dialogue-container {
-    background: #F8F4ED;
+    background: #FCFBF8;
+    border-left: 5px solid #556B46;
+    padding: 25px;
     border-radius: 8px;
-    padding: 20px;
     margin-top: 20px;
 }
 
