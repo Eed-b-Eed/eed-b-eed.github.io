@@ -102,7 +102,7 @@ function showarabicmsa(dialogueId) {
         "#dialogue-" + dialogueId + " .arabicmsa"
     ).forEach(line => {
 
-        line.style.display = "none";
+        line.style.display = "block";
 
     });
 
