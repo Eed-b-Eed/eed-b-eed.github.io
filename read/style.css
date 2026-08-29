@@ -1,3 +1,11 @@
+.dialogue-container {
+    background: #FCFBF8;
+    border-left: 5px solid #556B46;
+    padding: 25px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
 .dialogue-controls {
     display: flex;
     justify-content: center;
@@ -15,19 +23,10 @@
     font-family: "Segoe UI", sans-serif;
     font-size: 1rem;
     cursor: pointer;
-    transition: all 0.2s ease;
 }
 
 .dialogue-controls button:hover {
     background: #E3EBD9;
-}
-
-.dialogue-container {
-    background: #FCFBF8;
-    border-left: 5px solid #556B46;
-    padding: 25px;
-    border-radius: 8px;
-    margin-top: 20px;
 }
 
 .dialogue-line {
@@ -37,11 +36,40 @@
 .arabic {
     font-family: "Noto Naskh Arabic", serif;
     font-size: 2rem;
-    line-height: 1.8;
+    line-height: 1.6;
     direction: rtl;
+    text-align: right;
 }
 
 .english {
     display: none;
     font-family: "Segoe UI", sans-serif;
-  
+    font-size: 1rem;
+    color: #666;
+    font-style: normal;
+}
+
+/* Arabic + Translation */
+
+.dialogue-line.below .english {
+    display: block;
+    margin-top: 5px;
+}
+
+/* Side by Side */
+
+.dialogue-line.side-by-side {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    align-items: start;
+}
+
+.dialogue-line.side-by-side .english {
+    display: block;
+    text-align: left;
+}
+
+.dialogue-line.side-by-side .arabic {
+    text-align: right;
+}
