@@ -129,15 +129,8 @@ function showarabicmsa(dialogueId) {
         "#dialogue-" + dialogueId + " .arabicmsa"
     ).forEach(line => {
 
-        line.style.display = "block";
-
-    });
-
-    document.querySelectorAll(
-        "#dialogue-" + dialogueId + " .dialogue-line"
-    ).forEach(line => {
-
-        line.classList.remove("below", "side-by-side");
+        line.classList.remove("side-by-side", "below");
+        line.classList.add("arabicmsa");
 
     });
 }
