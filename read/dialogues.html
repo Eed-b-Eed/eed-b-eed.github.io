@@ -50,8 +50,36 @@ Read
 </div>
 </div>
 	
-<div class="update-card"><h2>Updates</h2> 
-	<p>We're working on it.</p>
+<div class="update-card"><h2>At the gym2</h2> 
+	<div class="story-preview">
+    <p>Having joined the gym, you start your training - at full power.</p>
+<button class="show-forms-btn" onclick="toggleStory(); renderDialogue('gym2')">
+Read
+</button>
+
+<div id="storyContent" style="display:none;">
+
+    <div class="dialogue-controls">
+        <button onclick="showArabicOnly()">
+            Arabic Only
+        </button>
+
+        <button onclick="showBelow()">
+            Arabic + Translation
+        </button>
+
+        <button onclick="showSideBySide()">
+            Side by Side
+        </button>
+    </div>
+
+    <div class="dialogue-container">
+        <div id="dialogue"></div>
+    </div>
+
+</div>
+</div>
+</div>
 </div>
 
 </main>
