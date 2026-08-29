@@ -18,12 +18,8 @@ function showSideBySide() {
     });
 }
 
-function loadStory() {
-    document.getElementById("storyContent").style.display = "block";
-}
-
 function toggleStory() {
-    const story = document.getElementById("story");
+    const story = document.getElementById("storyContent");
 
     if (story.style.display === "none" || story.style.display === "") {
         story.style.display = "block";
@@ -31,6 +27,17 @@ function toggleStory() {
         story.style.display = "none";
     }
 }
+
+const container = document.getElementById("dialogue");
+
+dialogue.forEach(([ar, en]) => {
+    container.innerHTML += `
+        <div class="dialogue-line">
+            <div class="arabic" dir="rtl">${ar}</div>
+            <div class="english">${en}</div>
+        </div>
+    `;
+});
 
 const dialogue = [
 ["مرحبا كوتش","Hello, coach!"],
@@ -64,13 +71,4 @@ const dialogue = [
 ["سلام بكرا بشوفك","Bye, I'll see you tomorrow. "]
 ];
 
-const container = document.getElementById("dialogue");
-
-dialogue.forEach(([ar, en]) => {
-    container.innerHTML += `
-        <div class="dialogue-line">
-            <div class="arabic">${ar}</div>
-            <div class="english">${en}</div>
-        </div>
-    `;
 });
