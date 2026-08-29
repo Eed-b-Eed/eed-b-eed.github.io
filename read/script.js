@@ -1,26 +1,26 @@
-function showArabicOnly() {
-    document.querySelectorAll('.dialogue-line').forEach(line => {
+function showArabicOnly(id) {
+    document.querySelectorAll("#dialogue-" + id + " .dialogue-line").forEach(line => {
         line.classList.remove('below', 'side-by-side');
     });
 }
 
-function showBelow() {
-    document.querySelectorAll('.dialogue-line').forEach(line => {
+function showBelow(id) {
+    document.querySelectorAll("#dialogue-" + id + " .dialogue-line").forEach(line => {
         line.classList.remove('side-by-side');
         line.classList.add('below');
     });
 }
 
-function showSideBySide() {
-    document.querySelectorAll('.dialogue-line').forEach(line => {
+function showSideBySide(id) {
+    document.querySelectorAll("#dialogue-" + id + " .dialogue-line").forEach(line => {
         line.classList.remove('below');
         line.classList.add('side-by-side');
     });
 }
 
-function toggleStory() {
+function toggleStory(id) {
 
-    const story = document.getElementById("storyContent");
+    const story = document.getElementById("storyContent" + id);
 
     if (story.style.display === "none" || story.style.display === "") {
 
@@ -34,7 +34,8 @@ function toggleStory() {
     }
 }
 
-const dialogue = [
+const dialogues = {
+gym:    [
 ["مرحبا كوتش","Hello, coach!"],
 ["مرحبا","Hello."],
 ["كيفك","How are you?"],
@@ -64,15 +65,24 @@ const dialogue = [
 ["تمام منيح","Yes, it's okay. "],
 ["سلام","Bye! "],
 ["سلام بكرا بشوفك","Bye, I'll see you tomorrow. "]
-];
+],
+gym2:    [
+["مرحبا كوتش","Hello, coach!"],
+["مرحبا","Hello."]
+    ]
+};
 
-const container = document.getElementById("dialogue");
+function renderDialogue(id) {
+    const container = document.getElementById("dialogue");
 
-dialogue.forEach(([ar, en]) => {
-    container.innerHTML += `
-        <div class="dialogue-line">
-            <div class="arabic" dir="rtl">${ar}</div>
-            <div class="english">${en}</div>
-        </div>
-    `;
-});
+    container.innerHTML = "";
+
+    dialogues[id].forEach(([ar, en]) => {
+        container.innerHTML += `
+            <div class="dialogue-line">
+                <div class="arabic" dir="rtl">${ar}</div>
+                <div class="english">${en}</div>
+            </div>
+        `;
+    });
+}
