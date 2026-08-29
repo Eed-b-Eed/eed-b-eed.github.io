@@ -46,7 +46,7 @@ function renderDialogue(dialogueId) {
         return;
     }
 
-    dialogues[dialogueId].forEach(([ar, en]) => {
+    dialogues[dialogueId].forEach(([ar, en, msa]) => {
 
         container.innerHTML += `
             <div class="dialogue-line">
