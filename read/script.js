@@ -79,7 +79,7 @@ function renderDialogue(dialogueId) {
             <div class="dialogue-line">
                 <div class="arabic" dir="rtl">${ar}</div>
                 <div class="english">${en}</div>
-                <div class="arabicmsa" dir="rtl">${msa}</div>
+                <div class="msa" dir="rtl">${msa}</div>
             </div>
         `;
 
