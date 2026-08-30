@@ -60,3 +60,21 @@ function toggleReadMore(contentId, link) {
 
     }
 }
+
+
+function toggleQandA(contentId, link) {
+
+    const content = document.getElementById(contentId);
+
+    if (content.style.display === "none" || content.style.display === "") {
+
+        content.style.display = "block";
+        link.textContent = "Close";
+
+    } else {
+
+        content.style.display = "none";
+        link.textContent = "Open";
+
+    }
+}
