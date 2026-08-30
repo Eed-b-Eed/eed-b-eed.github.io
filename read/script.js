@@ -123,7 +123,7 @@ function showSideBySide(dialogueId) {
     });
 }
 
-function showarabicssa(dialogueId) {
+function showarabicmsa(dialogueId) {
 
     document.querySelectorAll(
         "#dialogue-" + dialogueId + " .dialogue-line"
