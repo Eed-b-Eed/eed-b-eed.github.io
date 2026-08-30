@@ -240,14 +240,6 @@ main {
     border-radius: 8px;
 }
 
-a {
-    color: #556B46;
-}
-
-a:hover {
-    color: #D99A5B;
-}
-
 button {
     background-color: #556B46;
     color: #F8F4ED;
