@@ -64,7 +64,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 25px;
-    align-items: start;
+    align-items: baseline;
 }
 
 .dialogue-line.side-by-side .english {
