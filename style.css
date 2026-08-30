@@ -377,7 +377,7 @@ footer {
 }
 
 footer a,
-a:visited {
+footer a:visited {
     color: inherit;
 text-decoration: underline;
 text-decoration-color: rgba(0,0,0,0.08);
@@ -394,7 +394,6 @@ footer a:focus {
 footer a:active {
     opacity: 0.75;
 }
-
 
 footer p {
     margin: 10px 0;
