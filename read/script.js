@@ -123,10 +123,10 @@ function showSideBySide(dialogueId) {
     });
 }
 
-function showarabicmsa(dialogueId) {
+function showarabicssa(dialogueId) {
 
     document.querySelectorAll(
-        "#dialogue-" + dialogueId + " .arabicmsa"
+        "#dialogue-" + dialogueId + " .dialogue-line"
     ).forEach(line => {
 
         line.classList.remove("side-by-side", "below");
