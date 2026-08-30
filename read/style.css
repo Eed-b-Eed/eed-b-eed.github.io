@@ -83,3 +83,8 @@
     color: #555;
     font-size: 0.95em;
 }
+
+.dialogue-line.arabicmsa .msa {
+    display: block;
+    margin-top: 5px;
+}
