@@ -35,3 +35,8 @@
 .form-btn.active {
     font-family: "Noto Naskh Arabic", serif;
 }
+
+.msa {
+    font-family: "Noto Naskh Arabic", serif;
+    direction: rtl;
+}
